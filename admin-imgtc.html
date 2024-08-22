@@ -428,7 +428,6 @@
 		selectedAll(){
 			this.selected = !this.selected;
 			this.tableData = [...this.tableData].map(file => ({ ...file, selected: this.selected }));
-			this.selectedFiles = newData.filter(file => file.selected);
 		}
       },
       mounted() {
